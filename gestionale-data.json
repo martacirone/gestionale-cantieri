@@ -1,0 +1,272 @@
+{
+  "notifiche": [
+    {
+      "id": 1,
+      "tipo": "cantieri",
+      "titolo": "✅ Cantiere Creato",
+      "messaggio": "Punto Vendita Roma Centro è stato creato con successo",
+      "data": "05-10-2026 14:30",
+      "letta": false,
+      "icona": "🏗️",
+      "sezione": "cantieri"
+    },
+    {
+      "id": 2,
+      "tipo": "preventivi",
+      "titolo": "💰 Nuovo Preventivo Ricevuto",
+      "messaggio": "Preventivo da Ditta Rossi per Roma Centro: €45,500",
+      "data": "05-10-2026 13:45",
+      "letta": false,
+      "icona": "📥",
+      "sezione": "preventivi"
+    },
+    {
+      "id": 3,
+      "tipo": "documenti",
+      "titolo": "📄 Documento Caricato",
+      "messaggio": "Progettista Interno Sara Bianchi ha caricato il progetto tecnico",
+      "data": "05-10-2026 12:15",
+      "letta": false,
+      "icona": "📤",
+      "sezione": "cantieri"
+    },
+    {
+      "id": 4,
+      "tipo": "cantieri",
+      "titolo": "👥 General Contractor Assegnato",
+      "messaggio": "Costruzioni Rossi & Associati assegnato a Milano Nord",
+      "data": "04-10-2026 16:20",
+      "letta": true,
+      "icona": "✅",
+      "sezione": "gc"
+    },
+    {
+      "id": 9,
+      "tipo": "autorizzazione",
+      "titolo": "🔐 Autorizzazione Richiesta - Roma Centro",
+      "messaggio": "Stefano Bianchi ha autorizzato il sopralluogo per Punto Vendita Roma Centro",
+      "data": "06-10-2026 10:30",
+      "letta": false,
+      "icona": "✅",
+      "sezione": "autorizzazioni",
+      "autorizzazione_id": 1
+    },
+    {
+      "id": 10,
+      "tipo": "autorizzazione",
+      "titolo": "🔐 Autorizzazione Richiesta - Milano Nord",
+      "messaggio": "Marco Rossi ha autorizzato il sopralluogo per Punto Vendita Milano Nord",
+      "data": "06-10-2026 09:15",
+      "letta": false,
+      "icona": "✅",
+      "sezione": "autorizzazioni",
+      "autorizzazione_id": 2
+    }
+  ],
+
+  "preventiviRicevuti": [
+    {
+      "id": 1,
+      "cantiere": "Punto Vendita Roma Centro",
+      "fornitore": "Ditta Rossi",
+      "importo": "€45,500",
+      "data": "05-10-2026",
+      "stato": "In attesa",
+      "visto": false,
+      "descrizione": "Lavori di ristrutturazione completa"
+    },
+    {
+      "id": 2,
+      "cantiere": "Punto Vendita Milano Nord",
+      "fornitore": "Impresa Bianchi",
+      "importo": "€52,300",
+      "data": "04-10-2026",
+      "stato": "Approvato",
+      "visto": true,
+      "descrizione": "Realizzazione zona cliente e scaffalature"
+    },
+    {
+      "id": 3,
+      "cantiere": "Punto Vendita Napoli Centro",
+      "fornitore": "Costruzioni Verdi",
+      "importo": "€38,900",
+      "data": "03-10-2026",
+      "stato": "In attesa",
+      "visto": false,
+      "descrizione": "Impianti elettrici e idraulici"
+    }
+  ],
+
+  "autorizzazioni": [
+    {
+      "id": 1,
+      "cantiere": "Punto Vendita Roma Centro",
+      "data": "2026-10-10",
+      "responsabile": "Stefano Bianchi",
+      "dataRichiesta": "05-10-2026",
+      "stato": "✅ Accettato",
+      "autorizzato": true,
+      "visto": false
+    },
+    {
+      "id": 2,
+      "cantiere": "Punto Vendita Milano Nord",
+      "data": "2026-10-12",
+      "responsabile": "Marco Rossi",
+      "dataRichiesta": "04-10-2026",
+      "stato": "⏳ In sospeso",
+      "autorizzato": false,
+      "visto": false
+    },
+    {
+      "id": 3,
+      "cantiere": "Punto Vendita Napoli Centro",
+      "data": "2026-10-08",
+      "responsabile": "Alessandra Moretti",
+      "dataRichiesta": "03-10-2026",
+      "stato": "✅ Accettato",
+      "autorizzato": true,
+      "visto": true
+    }
+  ],
+
+  "cantieri": [
+    {
+      "id": "milano",
+      "nome": "MILANO",
+      "ubicazione": "Via di Sotto n.25",
+      "pm": "Marta",
+      "inizio": "28/10/2026",
+      "avanzamento": "42%",
+      "stato": "In Corso"
+    },
+    {
+      "id": "roma",
+      "nome": "ROMA CENTRO",
+      "ubicazione": "Via Nazionale n.10",
+      "pm": "Sara Bianchi",
+      "inizio": "15/09/2026",
+      "avanzamento": "75%",
+      "stato": "In Corso"
+    },
+    {
+      "id": "napoli",
+      "nome": "NAPOLI CENTRO",
+      "ubicazione": "Piazza del Plebiscito n.1",
+      "pm": "Marco Rossi",
+      "inizio": "20/09/2026",
+      "avanzamento": "60%",
+      "stato": "In Corso"
+    }
+  ],
+
+  "generalContractors": [
+    {
+      "id": "ditta-rossi",
+      "nome": "Ditta Rossi",
+      "email": "mario@ditta-rossi.it",
+      "telefono": "+39 06 1234567",
+      "indirizzo": "Via della Repubblica n.15",
+      "città": "Roma",
+      "piva": "12345678901",
+      "sito": "www.ditta-rossi.it",
+      "projectManagers": [
+        {
+          "nome": "Mario Rossi",
+          "ruolo": "Responsabile Cantieri",
+          "telefono": "+39 06 7654321",
+          "email": "mario.rossi@ditta-rossi.it"
+        }
+      ]
+    }
+  ],
+
+  "fornitori": [
+    {
+      "id": 1,
+      "nome": "Fornitori Materiali Edili",
+      "categoria": "Edilizia",
+      "telefono": "+39 010 123456",
+      "email": "info@fornitori-edili.it",
+      "valutazione": 4.5
+    },
+    {
+      "id": 2,
+      "nome": "Impianti Moderni",
+      "categoria": "Impianti",
+      "telefono": "+39 02 567890",
+      "email": "info@impianti-moderni.it",
+      "valutazione": 4.8
+    }
+  ],
+
+  "contatti": [
+    {
+      "id": 1,
+      "nome": "Stefano Bianchi",
+      "ruolo": "Responsabile Cantieri",
+      "email": "stefano.bianchi@example.com",
+      "telefono": "+39 06 9876543",
+      "azienda": "Acqua e Sapone"
+    },
+    {
+      "id": 2,
+      "nome": "Marco Rossi",
+      "ruolo": "Project Manager",
+      "email": "marco.rossi@example.com",
+      "telefono": "+39 02 5432109",
+      "azienda": "Costruzioni Rossi"
+    }
+  ],
+
+  "designers": [
+    {
+      "id": 1,
+      "nome": "Marta Cirone",
+      "genere": "F",
+      "ruolo": "Interior Designer",
+      "email": "martacirone55@gmail.com",
+      "isPersonal": true
+    },
+    {
+      "id": 2,
+      "nome": "Sara Bianchi",
+      "genere": "F",
+      "ruolo": "Progettista Interno",
+      "email": "sara.bianchi@example.com",
+      "isPersonal": false
+    },
+    {
+      "id": 3,
+      "nome": "Luca Ferrari",
+      "genere": "M",
+      "ruolo": "Tecnico Progettazione",
+      "email": "luca.ferrari@example.com",
+      "isPersonal": false
+    },
+    {
+      "id": 4,
+      "nome": "Marco Rossi",
+      "genere": "M",
+      "ruolo": "Project Manager",
+      "email": "marco.rossi@example.com",
+      "isPersonal": false
+    },
+    {
+      "id": 5,
+      "nome": "Alessandra Moretti",
+      "genere": "F",
+      "ruolo": "Project Manager",
+      "email": "alessandra.moretti@example.com",
+      "isPersonal": false
+    },
+    {
+      "id": 6,
+      "nome": "Stefano Bianchi",
+      "genere": "M",
+      "ruolo": "Responsabile Cantieri",
+      "email": "stefano.bianchi@example.com",
+      "isPersonal": false
+    }
+  ]
+}
